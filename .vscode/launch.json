@@ -29,6 +29,19 @@
                 "${workspaceFolder}/dist/*.js"
             ],
             "sourceMaps": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Ejercicio 3",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\dist\\ej3\\main.js",
+            "outFiles": [
+                "${workspaceFolder}/dist/*.js"
+            ],
+            "sourceMaps": true
         }
     ]
 }
