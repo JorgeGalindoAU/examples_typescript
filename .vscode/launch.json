@@ -7,11 +7,24 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Debug",
+            "name": "Debug Ejercicio 1",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\dist\\main.js",
+            "program": "${workspaceFolder}\\dist\\ej1\\main.js",
+            "outFiles": [
+                "${workspaceFolder}/dist/*.js"
+            ],
+            "sourceMaps": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Ejercicio 2",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\dist\\ej2\\main.js",
             "outFiles": [
                 "${workspaceFolder}/dist/*.js"
             ],
