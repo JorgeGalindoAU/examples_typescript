@@ -56,5 +56,31 @@
             ],
             "sourceMaps": true
         },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Ejercicio 5",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\dist\\ej5\\main.js",
+            "outFiles": [
+                "${workspaceFolder}/dist/ej5/*.js"
+            ],
+            "sourceMaps": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Ejercicio 6",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\dist\\ej6\\main.js",
+            "outFiles": [
+                "${workspaceFolder}/dist/ej6/*.js"
+            ],
+            "sourceMaps": true
+        },
     ]
 }
