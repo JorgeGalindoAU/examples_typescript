@@ -82,5 +82,18 @@
             ],
             "sourceMaps": true
         },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Ejercicio 7",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\dist\\ej7\\main.js",
+            "outFiles": [
+                "${workspaceFolder}/dist/ej7/*.js"
+            ],
+            "sourceMaps": true
+        },
     ]
 }
