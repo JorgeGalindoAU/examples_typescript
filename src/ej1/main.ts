@@ -4,7 +4,7 @@ function greet(person: string) {
     return "Hello, " + person;
 }
 
-const test: string = 'Hello World!';
+let test: string = 'Hello World!' as string;
 
 console.log(`Mi mensaje: ${test}`);
 

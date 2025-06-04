@@ -95,5 +95,18 @@
             ],
             "sourceMaps": true
         },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Semana 1 Clase 2",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\dist\\semana1_clase2\\main.js",
+            "outFiles": [
+                "${workspaceFolder}/dist/ej1/*.js"
+            ],
+            "sourceMaps": true
+        }
     ]
 }

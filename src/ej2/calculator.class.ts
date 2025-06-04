@@ -1,3 +1,5 @@
+export type calculatorType = (x: number, y: number) => number;
+
 export class Calculator {
     sumValues(x: number, y: number): number {
         return x + y;
@@ -7,8 +9,13 @@ export class Calculator {
         return x - y;
     }
 
-    executeOperation(x: number, y: number, solve: (x: number, y: number) => number): number {
+    executeOperation(x: number, y: number,
+        solve: calculatorType): number {
         return solve(x, y);
     }
+}
+
+export function helloWorld(message: string): string {
+    return 'Hello World: ' + message;
 }
 
