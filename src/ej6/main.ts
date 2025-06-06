@@ -13,6 +13,8 @@ import { finalize, map, take, timeInterval } from 'rxjs/operators';
     Pero esto ha cambiado justo en Angular 19, donde se ha introducido las señales.
 */
 
+let myFirstObservable = of('Hello');
+
 let myStringObservable: Observable<string> = of('Hello');
 let myStringSubscription: Subscription = myStringObservable
     .pipe(map(s => s + 'User'))

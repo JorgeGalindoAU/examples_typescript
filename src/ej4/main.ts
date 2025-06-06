@@ -6,12 +6,17 @@ import { IUser } from "./user";
 type ResultType = "OK" | "KO";
 
 // tipos compuestos
+let res: undefined;
+console.log(typeof res);
+
 let result1: ResultType = "OK";
 let result2: "OK" | "KO" = "OK";
 let isActivated: boolean | undefined | null = null;
 
 // tipo 'any'
-let aUser: any; // se desaconseja el uso de any todo lo posible
+let aUser: IUser; // se desaconseja el uso de any todo lo posible
+let myJson: unknown;
+
 aUser = {
     Id: 1234,
     UserCode: "user",
@@ -19,9 +24,10 @@ aUser = {
     IsAdmin: false,
     IsActive: true,
     LastLogin: '202505529'// si no añadimos un campo, no pasa nada ¿?
-} as IUser;
+} as IUser; // int myNumero = (int)"1";
 
 console.log(aUser.Deleted); // ¿undefined?
+// console.log(aUser.CualquierCosa); // ¿undefined?
 
 // uso de interfaces
 let user1: IUser = {
@@ -49,7 +55,7 @@ let user3: IUser = {
     IsAdmin: false,
     IsActive: true,
     LastLogin: '202505529',
-    Deleted: true,
+    Deleted: false,
 } as IUser;
 
 let users: IUser[] = [] as IUser[];
